@@ -5,5 +5,13 @@ http://maxptv.ddns.net:25461/live/MA020/0706/231.ts
 http://maxptv.ddns.net:25461/live/MA020/0706/230.ts
 #EXTINF:0,Quran
 rtsp://radio.onlinehorizons.net:5540/QuranKareem
-#EXTINF:0,Youtube
-https://www.youtube.com/watch?v=BMFDwLnOEdY
+#EXTINF:0,Youtube1
+https://www.youtube.com/embed/BMFDwLnOEdY&autoplay=1
+#EXTINF:0,Youtube2
+https://www.youtube.com/embed/tRtq9gAir6Q&autoplay=1
+#EXTINF:0,Comedy
+http://www.niletc.tv/stream.php?ch=comedy
+#EXTINF:0,Comedy
+http://www.niletc.tv/Channel/drama
+#EXTINF:0,Drama
+rtmp://livestreaming5.onlinehorizons.net/NTNNileDrama
