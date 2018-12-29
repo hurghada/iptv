@@ -17,5 +17,23 @@ http://www.niletc.tv/Channel/drama
 rtmp://livestreaming5.onlinehorizons.net/NTNNileDrama
 #EXTINF:0,Fox
 https://livestream.com/accounts/6396566/live
-#EXTINF:0,NPR | Washington
+#EXTINF:0,NPR Washington
 http://nprdmp-live01-mp3.akacast.akamaistream.net/7/998/364916/v1/npr.akacast.akamaistream.net/nprdmp_live01_mp3
+#EXTINF:0,RADIO MASR
+http://live.radiomasr.net:8060/RADIOMASR
+#EXTINF:0,Mega FM
+http://audiostreaming.twesto.com/megafm214
+#EXTINF:0,محطة مصر
+http://listen.mahatetmasr.com/;
+#EXTINF:0,نغم اف ام
+http://37.187.79.93:9230/stream
+#EXTINF:0,90-90 FM EGYPT
+http://9090streaming.mobtada.com/9090FMEGYPT
+#EXTINF:0,راديو هيتس
+http://audiostreaming.twesto.com/radiohits215
+#EXTINF:0,Mr Bean Official
+https://www.youtube.com/embed/ovmSF0RIwTQ
+#EXTINF:0,COPTIC TVS
+https://www.youtube.com/embed/M9M7aELkzro&autoplay=1&playlist=PLaTVdpQg_4dekOdU1ervGvavxijP5_CXq
+
+
