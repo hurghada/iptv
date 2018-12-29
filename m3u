@@ -1,0 +1,9 @@
+#EXTM3U
+#EXTINF:0,A
+http://maxptv.ddns.net:25461/live/MA020/0706/231.ts
+#EXTINF:0,B
+http://maxptv.ddns.net:25461/live/MA020/0706/230.ts
+#EXTINF:0,Quran
+rtsp://radio.onlinehorizons.net:5540/QuranKareem
+#EXTINF:0,Youtube
+https://www.youtube.com/watch?v=BMFDwLnOEdY
