@@ -23,11 +23,15 @@
     </select>
 
    <label id="x" />
-
+   <video id="video_player" controls><source src="test1.mp4" type="video/mp4" /></video>
+	
 <script>
 	$('#select-1, #select-2').change(function() {
-  		var show = $('#select-1').val() + $('#select-2').val();
+  		var show = $('#select-1').val(); //+ $('#select-2').val();
 		$("#x").text(show);
+		$('#video_player source').attr('src', show);
+		$("#video_player source")[0].load(); 
+		$("#video_player source")[0].play(); 
 	});
 </script>
 </fieldset></form></div></div>
