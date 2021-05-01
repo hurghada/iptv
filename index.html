@@ -30,7 +30,10 @@
   		var showURL = $('#select-1').val();
 		showURL = showURL.replace("${EPISODE}", episode);
 		
-		$("#showURL").text(showURL);
+		var link = $('<a/>');
+       		link.attr('href', showURL);
+       		link.text(showURL);
+		
 		var video = $('<video />', {
         		id: 'video',
         		src: showURL,
@@ -40,7 +43,7 @@
         		controls: true
     		});
 		
-    		$('#video_player').html(video);
+    		$('#video_player').html(video + link);
 	});
 </script>
 	
@@ -48,9 +51,8 @@
 
 <div data-role="content">
 	
-<label id="showURL" />	
 <div id="video_player" width="100%">
-
+	
 </div>
 	
 </div></div>
