@@ -25,8 +25,8 @@
    
 	<script>
 	$('#select-1, #select-2').change(function() {
-		const episode: number = $('#select-2').val();
-  		var showURL: string = $('#select-1').val();
+		var episode = $('#select-2').val();
+  		var showURL = $('#select-1').val();
 		$("#x").text(showURL);
 		var video = $('<video />', {
         		id: 'video',
