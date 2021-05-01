@@ -43,7 +43,9 @@
         		controls: true
     		});
 		
-    		$('#video_player').html(video + link);
+		$("#video_player").empty();
+    		$('#video_player').append(video);
+		$('#video_player').append(link);		
 	});
 </script>
 	
