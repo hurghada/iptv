@@ -23,9 +23,8 @@
     </select>
 
    <label id="x" />
-   <div id="video_player" width="100%"></div>
-	
-<script>
+   
+	<script>
 	$('#select-1, #select-2').change(function() {
   		var showURL = $('#select-1').val(); //+ $('#select-2').val();
 		$("#x").text(showURL);
@@ -39,7 +38,9 @@
 		
     		video.appendTo($('#video_player'));
 	});
-</script>
+	</script>
+	
 </fieldset></form></div></div>
+<div id="video_player" width="100%"></div>
 </body>
 </html>
