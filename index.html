@@ -45,18 +45,17 @@
 		
 		$("#video_player").empty();
     		$('#video_player').append(video);
-		$('#video_player').append(link);		
+		//$('#video_player').append(link);
+		$('#footer').html(link);
 	});
 </script>
 	
 </div>
 
-<div data-role="content">
-	
-<div id="video_player" width="100%">
-	
+<div data-role="content"><div id="video_player" width="100%" /></div>
+
+<div data-role="footer" id="footer" />
+
 </div>
-	
-</div></div>
 </body>
 </html>
