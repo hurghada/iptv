@@ -17,7 +17,6 @@
     </select> 
 
     <select name="select-2" id="select-2" style="width:100%; font-size:200px" titlel="B">
-        <option value="01">01</option><option value="02">02</option><option value="03">03</option>
     </select>
 </fieldset>
 <script>
@@ -61,11 +60,13 @@
 	
 	$('#select-1').change(function() {
 		var json = jQuery.data( document.body, "json" );
-		alert(json[$('#select-1').val()]);
-		for (const i in json[ $('#select-1').val() ])
-		{
-			$('<option/>').val(i).text(i).appendTo('#select-2');
-		}
+		
+		var A = json[$('#select-1').val()];
+		$("#select-2").empty();
+		
+		$.each(A, function(i, item) {
+                        $('<option/>').val(i).text(item).appendTo('#select-2');
+                    });
 	});
 	
 	$('#select-2').change(function() {
