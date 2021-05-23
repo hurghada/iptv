@@ -45,6 +45,17 @@
        		link2.text(B);
 		
 		$('#footer').html( link1 );
+		
+		test();
+	});
+	
+	
+	function test() {
+  		return $.getJSON('https://api.npoint.io/6c64177300ffdb86515f');
+	};
+
+	$.when(test()).then(function (data) {
+  		alert(data);
 	});
 	
 	$('#select-1, #select-2').change(function() {
