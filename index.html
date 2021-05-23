@@ -63,7 +63,7 @@
 	
 	$('#select-1').change(function() {
 		var json = jQuery.data( document.body, "json" );
-		for (const key in json[ $('#select-2').val() ])
+		for (const key in json[ $('#select-1').val() ])
 		{
 			$('<option/>').val(key).text(key).appendTo('#select-2');
 		}
