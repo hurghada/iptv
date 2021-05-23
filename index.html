@@ -14,14 +14,6 @@
 <div data-role="header" title="INPUT">	
 <fieldset data-role="controlgroup" data-type="horizontal">
     <select name="select-1" id="select-1" style="width:100%; font-size:200px" titlel="A">
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.Leabet.Newton.2021.E${EPISODE}.720p.mp4">نيوتن</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.El.Madah.2021.E${EPISODE}.720p.mp4">مداح</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.El.Ekhtyar.S02.2021.E${EPISODE}.720p.mp4">اختيار</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.Covid.25.2021.E${EPISODE}.720p.mp4">كوفيد</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.Ramez.Aqaloh.Tar.2021.E${EPISODE}.720p.mp4">رامز</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.Fares.Bela.Gawaz.2021.E${EPISODE}.720p.mp4">فارس</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.Byn.El.Samaa.Wel.Ard.2021.E${EPISODE}.720p.mp4">سما</option>
-      <option value="https://t2shahidonline.com/upload6/%5BT2Shahid.com%5D.El.Taawus.2021.E${EPISODE}.720p.mp4">طاووس</option>
     </select> 
 
     <select name="select-2" id="select-2" style="width:100%; font-size:200px" titlel="B">
@@ -56,11 +48,18 @@
 
 	$.when(init()).then(function (data) {
 		jQuery.data( document.body, "json", data );
-		
-		alert(JSON.stringify( jQuery.data( document.body, "json" ) ) );
   		alert( JSON.stringify(Object.keys(data)) );
-		console.log(Object.keys(data));
+		populateSelect();
 	});
+	
+	function populateSelect()
+	{
+		var json = jQuery.data( document.body, "json" );
+		for (const key in json)
+		{
+			$('<option/>').val(key).text(key).appendTo('#select-1');
+		}
+	};
 	
 	$('#select-1, #select-2').change(function() {
 		var  episode = $('#select-2').val();
