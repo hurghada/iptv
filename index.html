@@ -51,7 +51,10 @@
 	
 	
 	function test() {
-  		return $.getJSON('https://api.npoint.io/6c64177300ffdb86515f');
+		var json = $.getJSON('https://api.npoint.io/6c64177300ffdb86515f');
+		jQuery.data( document.body, "json", json );
+		alert(JSON.stringify(json));
+  		return json;
 	};
 
 	$.when(test()).then(function (data) {
