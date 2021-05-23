@@ -55,7 +55,8 @@
 	};
 
 	$.when(test()).then(function (data) {
-  		alert( JSON.stringify(data) );
+  		alert( JSON.stringify(Object.keys(data)) );
+		console.log(Object.keys(data));
 	});
 	
 	$('#select-1, #select-2').change(function() {
