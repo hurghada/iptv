@@ -55,7 +55,7 @@
 	};
 
 	$.when(test()).then(function (data) {
-  		alert(data);
+  		alert( JSON.stringify(data) );
 	});
 	
 	$('#select-1, #select-2').change(function() {
