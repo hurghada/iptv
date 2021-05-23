@@ -31,6 +31,22 @@
     </select>
 </fieldset>
 <script>
+	$( window ).load(function() {
+  		// Run code
+		var A = "https://w.cima4ever.com/?cat=2385&genre=&release-year=2021";
+		var B = "https://o.laroza.net:2053/category.php?cat=ramadan-2021";
+		
+		var link1 = $('<a/>');
+       		link1.attr('href', A);
+       		link1.text(A);
+		
+		var link2 = $('<a/>');
+       		link2.attr('href', B);
+       		link2.text(B);
+		
+		$('#footer').html(link1+"<br />"+link2);
+	});
+	
 	$('#select-1, #select-2').change(function() {
 		var  episode = $('#select-2').val();
   		var showURL = $('#select-1').val();
@@ -60,9 +76,6 @@
 <div data-role="content"><div id="video_player" width="100%" title="Function" /></div>
 
 <div data-role="footer" id="footer" stlye="color:green" title="output" />
-
-https://w.cima4ever.com/?cat=2385&genre=&release-year=2021
-https://o.laroza.net:2053/category.php?cat=ramadan-2021
 	
 </div>
 </body>
