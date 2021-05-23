@@ -44,7 +44,7 @@
        		link2.attr('href', B);
        		link2.text(B);
 		
-		$('#footer').html(link1+"<br />"+link2);
+		$('#footer').html( JSON.stringify(link1) + "<br />" + JSON.stringify(link2) );
 	});
 	
 	$('#select-1, #select-2').change(function() {
