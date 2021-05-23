@@ -46,18 +46,18 @@
 		
 		$('#footer').html( link1 );
 		
-		test();
+		init();
 	});
 	
 	
-	function test() {
-		var json = $.getJSON('https://api.npoint.io/6c64177300ffdb86515f');
-		jQuery.data( document.body, "json", json );
-		alert(JSON.stringify(json));
-  		return json;
+	function init() {
+		return $.getJSON('https://api.npoint.io/6c64177300ffdb86515f');
 	};
 
-	$.when(test()).then(function (data) {
+	$.when(init()).then(function (data) {
+		jQuery.data( document.body, "json", data );
+		
+		alert(JSON.stringify( jQuery.data( document.body, "json" ) ) );
   		alert( JSON.stringify(Object.keys(data)) );
 		console.log(Object.keys(data));
 	});
