@@ -61,7 +61,15 @@
 		}
 	};
 	
-	$('#select-1, #select-2').change(function() {
+	$('#select-1').change(function() {
+		var json = jQuery.data( document.body, "json" );
+		for (const key in json[ $('#select-2').val() ])
+		{
+			$('<option/>').val(key).text(key).appendTo('#select-2');
+		}
+	});
+	
+	$('#select-2').change(function() {
 		var  episode = $('#select-2').val();
   		var showURL = $('#select-1').val();
 		showURL = showURL.replace("${EPISODE}", episode);
