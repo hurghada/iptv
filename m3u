@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:0,Arabic
+http://www.elahmad.com/tv/m3u/play_list_3.m3u?id=arabic_1&t=0de0d14ef55db64e8e3bbf1012df217c
 
 #EXTINF:0,elahmad
 https://www.elahmad.com/tv/embed.php?id=/tv/m3u8/rt.m3u8?id=eng
